@@ -12,7 +12,9 @@
 
 小车能在地毯上保持直立，并响应手机通过蓝牙发送的摇杆指令。
 
-![平衡车转弯，同时手机显示转向环曲线](docs/images/demo.gif)
+| 前进后退 | 转弯 |
+|---|---|
+| ![平衡车远离镜头又开回来](docs/images/demo-drive.gif) | ![平衡车转弯，同时手机显示转向环曲线](docs/images/demo-turn.gif) |
 
 ▶ [观看 34 秒完整视频](docs/media/demo.mp4)（已去除声音）
 

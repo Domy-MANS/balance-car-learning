@@ -12,7 +12,9 @@ My work from following a two-wheel self-balancing car tutorial on an STM32F103C8
 
 The car stays upright on carpet and responds to joystick commands from a phone over Bluetooth.
 
-![The balance car turning while a phone shows the turn loop plot](docs/images/demo.gif)
+| Forward and backward | Turning |
+|---|---|
+| ![The balance car driving away from and back toward the camera](docs/images/demo-drive.gif) | ![The balance car turning while a phone shows the turn loop plot](docs/images/demo-turn.gif) |
 
 ▶ [Watch the full 34-second video](docs/media/demo.mp4) (sound removed)
 
