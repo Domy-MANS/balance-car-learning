@@ -1,0 +1,15 @@
+# Keil MDK build output and per-user settings
+Objects/
+Listings/
+*.uvguix.*
+*.lst
+*.o
+*.d
+*.crf
+*.axf
+*.hex
+*.map
+
+# Windows
+desktop.ini
+Thumbs.db
