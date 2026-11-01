@@ -11,9 +11,9 @@ My work from following a two-wheel self-balancing car tutorial on an STM32F103C8
 Stage 05 runs three PID loops from a timer interrupt:
 
 ```text
-Speed target --> Speed PID (every 50 ms) --> Angle PID (every 10 ms) --> Average PWM --+
-                                                                                       v
-Turn target  --> Turn PID  (every 50 ms) --------------------------> PWM difference --> Left and right motors
+Speed target -> Speed PID (50 ms) -> Angle PID (10 ms) -> Average PWM --+
+                                                                        +-> Motors
+Turn target  -> Turn PID  (50 ms) -------------------> PWM difference --+
 ```
 
 - **Tilt angle:** a complementary filter combines the MPU6050 accelerometer and gyroscope readings.

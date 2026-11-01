@@ -11,9 +11,9 @@
 第五阶段在定时器中断里运行三个 PID 环：
 
 ```text
-Speed target --> Speed PID (every 50 ms) --> Angle PID (every 10 ms) --> Average PWM --+
-                                                                                       v
-Turn target  --> Turn PID  (every 50 ms) --------------------------> PWM difference --> Left and right motors
+Speed target -> Speed PID (50 ms) -> Angle PID (10 ms) -> Average PWM --+
+                                                                        +-> Motors
+Turn target  -> Turn PID  (50 ms) -------------------> PWM difference --+
 ```
 
 - **倾角：** 用互补滤波融合 MPU6050 的加速度计和陀螺仪数据。
