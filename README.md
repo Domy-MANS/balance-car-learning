@@ -6,6 +6,22 @@ My work from following a two-wheel self-balancing car tutorial on an STM32F103C8
 
 > **This is not original work.** The code is based on the balance car tutorial by [Jiangxie Technology (江协科技)](https://jiangxiekeji.com). In each stage, about 97% to 99% of the code lines match the tutorial source, ignoring comments and whitespace. The [changes from the tutorial](#changes-from-the-tutorial) section lists what differs.
 
+## Demo
+
+![The balance car standing on a carpet](docs/images/car.jpg)
+
+The car stays upright on carpet and responds to joystick commands from a phone over Bluetooth.
+
+![The balance car turning while a phone shows the turn loop plot](docs/images/demo.gif)
+
+▶ [Watch the full 34-second video](docs/media/demo.mp4) (sound removed)
+
+### Turn loop tuning
+
+The phone plots the turn target and the measured speed difference while the gains are adjusted with sliders. The measured value follows both steps of about ±4 with a short delay. The TurnKp of 3.33 and TurnKi of 4.22 on screen are the values in the stage 05 code.
+
+<img src="docs/images/turn-tuning.jpg" width="380" alt="Bluetooth serial app plotting turn target and measured speed difference, with PID sliders below" />
+
 ## Control structure
 
 Stage 05 runs three PID loops from a timer interrupt:
